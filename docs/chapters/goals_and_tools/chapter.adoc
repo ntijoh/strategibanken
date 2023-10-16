@@ -1,0 +1,6 @@
+:imagesdir: chapters/test/images
+
+
+= Mål och Verktyg
+
+icon:exclamation-circle[] Här behövs text om programmerare sätter upp mål- och delmål och hur de använder verktyg för att uppnå dessa mål- och delmål. Gärna med praktiska exempel.

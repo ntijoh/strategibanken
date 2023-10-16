@@ -1,0 +1,555 @@
+:imagesdir: chapters/tools/images
+:tabs-sync-option:
+
+= Verktyg
+
+== Ändring av state (transformation)
+
+=== Tilldelning
+
+icon:question-circle[] Är tilldelning ett verktyg eller räknas det som programming "knowledge"?
+
+För att kunna använda _värden_ (t.ex tal) i program måste man först lagra dem i en variabel. 
+Att lagra ett värde i en variabel gör man med hjälp av tilldelning.
+
+En tilldelning består av tre komponenter: en _variabel_, ett _tilldelningstecken_ och ett _värde_.
+
+[tabs,sync-group-id=lang]
+====
+Ruby::
++
+.Tilldelningsverktyget i Ruby
+[source,ruby]
+----
+speed = 10
+----
+Python::
++
+[source,python]
+----
+speed = 10
+----
+Javascript::
++
+[source,javascript]
+----
+const speed = 10;
+----
+C#::
++ 
+[source,javascript]
+----
+var speed = 10; 
+----
+====
+
+=== Initialisering
+
+Initialisering används när man vet att man kommer behöva ett värde som man kan _modifiera_ längre fram i flödet.
+
+.Exempel: Summera tal
+[NOTE]
+====
+När man vill räkna ut summan alla värden i en lista behöver man ha en variabel som innehåller summan. För varje värde i listan vill man sen addera värdet till summa-variabeln. Men för att man ska kunna addera det första värdet i listan till summa-variabeln måste summa-variabeln först vara _initialiserad_ med ett värde, antagligen 0.
+====
+
+.Exempel: Bilspel
+[NOTE]
+====
+I ett bilspel vill man kunna gasa och bromsa. Både gas- och bromskoden kommer _modifiera_ hastigheten på bilen, men för att hastigheten ska kunna modifieras måste det först skapas en variabel som innehåller hastigheten, och variabeln måste ha _initialiserats_ med ett värde som kan modifieras.
+====
+
+image::initialisering.png[Initialiseringsverktyget]
+
+[tabs,sync-group-id=lang]
+====
+Ruby::
++
+[source,ruby]
+----
+speed = 0 <1>
+
+...
+
+if pressed_button == 'w'
+    speed += 1 <2>
+elsif pressed_button == 's'
+    speed -= 1 <2>
+elsif pressed_button == 'esc'
+    speed = 0  <2>
+end
+----
+<1> Initialisering av speed-variabeln
+<2> Modifiering av speed-variabeln
+Python::
++
+[source,python]
+----
+speed = 0
+----
+Javascript::
++
+[source,javascript]
+----
+const speed = 0;
+----
+C#::
++ 
+[source,c#]
+----
+var speed = 10; 
+----
+====
+
+=== Inkrementering
+
+Inkrementering innebär att _öka_ värdet på en variabel. Oftast är värdet ett heltal. Inkrementering används ofta inne i <<_upprepning_av_flöde,loop-verktygen>> för att hålla koll på räknar-variabeln, men det går även att använda tillsammans med de olika <<_uppdelning_av_flöde,if-verktygen>>.
+
+För att _inkrementera_ värdet på en variabel måste variabeln först vara <<_initialisering,_initialiserad_>>
+
+.Inkrementering med if och if-elsif
+[tabs,sync-group-id=lang]
+====
+Ruby::
++
+[source,ruby]
+----
+healthiness_score = 0 <1>
+
+...
+
+if favourite_drink == 'water'
+    healthiness_score += 1 <2>
+end
+
+if favourite_food == 'fruit'
+    healthiness_score += 1 <2>
+elsif favourite_food == 'carrot'
+    healthiness_score += 2 <2>
+elsif favourite_food == 'pizza'
+    healthiness_score -= 2 <3>
+end
+----
+<1> Initialisering av healthiness-variabeln
+<2> Inkrementering av healthiness-variabeln
+<3> Dekrementering av healthiness-variabeln
+Python::
++
+[source,python]
+----
+speed = 0
+----
+Javascript::
++
+[source,javascript]
+----
+const speed = 0;
+----
+C#::
++ 
+[source,c#]
+----
+var speed = 10; 
+----
+====
+
+.Inkrementering i räknande loop
+[tabs,sync-group-id=lang]
+====
+Ruby::
++
+[source,ruby]
+----
+
+number_of_greeted_people = 0 <1>
+
+...
+
+while number_of_greeted_people < number_of_people
+    puts "Hello, nice to meet you!"
+    number_of_greeted_people += 1 <2>
+end
+----
+<1> Initialisering av number_of_greeted_people-variabeln
+<2> Inkrementering av number_of_greeted_people-variabeln
+Python::
++
+[source,python]
+----
+speed = 0
+----
+Javascript::
++
+[source,javascript]
+----
+const speed = 0;
+----
+C#::
++ 
+[source,c#]
+----
+var speed = 10; 
+----
+====
+
+
+=== Dekrementering
+
+Dekrementering innebär att _minska_ värdet på en variabel. Oftast är värdet ett heltal. Dekrementering används ofta inne i loopar för att hålla koll på räknar-variabeln, men det går även att använda tillsammans med if-verktygen.
+
+För att _dekrementera_ värdet på en variabel måste variabeln först vara <<_initialisering,_initialiserad_>>
+
+.Dekrementering med if och if-elsif
+[tabs,sync-group-id=lang]
+====
+Ruby::
++
+[source,ruby]
+----
+healthiness_score = 0 <1>
+
+...
+
+if favourite_drink == 'water'
+    healthiness_score += 1 <2>
+end
+
+if favourite_food == 'fruit'
+    healthiness_score += 1 <2>
+elsif favourite_food == 'carrot'
+    healthiness_score += 2 <2>
+elsif favourite_food == 'pizza'
+    healthiness_score -= 2 <3>
+end
+----
+<1> Initialisering av healthiness-variabeln
+<2> Inkrementering av healthiness-variabeln
+<3> Dekrementering av healthiness-variabeln
+Python::
++
+[source,python]
+----
+speed = 0
+----
+Javascript::
++
+[source,javascript]
+----
+const speed = 0;
+----
+C#::
++ 
+[source,c#]
+----
+var speed = 10; 
+----
+====
+
+.Dekrementering i räknande loop
+[tabs,sync-group-id=lang]
+====
+Ruby::
++
+[source,ruby]
+----
+
+number_of_laps_left = 5 <1>
+
+...
+
+while number_of_laps_left > 0
+    puts "Running a lap!"
+    number_of_laps_left -= 1 <2>
+end
+----
+<1> Initialisering av number_of_laps_left-variabeln
+<2> Dekrementering av number_of_laps_left-variabeln
+Python::
++
+[source,python]
+----
+speed = 0
+----
+Javascript::
++
+[source,javascript]
+----
+const speed = 0;
+----
+C#::
++ 
+[source,c#]
+----
+var speed = 10; 
+----
+====
+
+=== Mellanlagring
+
+Mellanlagring används när man vill _återanvända_ värdet från en uträkning eller ett funktionsanrop senare i flödet. Exempelvis för att funktionsanropet kräver mycket resurser, tar lång tid att genomföra, eller kräver input från en användare, eller för att det bara blir tydligare kod.
+
+.Exempel: Lagra användares initialer
+[NOTE]
+====
+Istället för att varje gång man vill använda en användares initialer extrahera dessa från variabeln som innehåller användarens namn, kan man extrahera dem _en_ gång och mellanlagra resultatet i en variabel.
+====
+
+.Exempel: Hur många gånger förekommer ordet i boken?
+[NOTE]
+====
+Ett program ska jämföra vilket av två ord som förekommer flest antal gånger i en bok. Det tar relativt lång tid att söka igenom boken och räkna antalet förekomster av ordet. Därför kan man räkna anatalet förekomster en gång, och lagra resultatet i en variabel, som man sedan använder varje gång man vill använda värdet.
+====
+
+[tabs,sync-group-id=lang]
+====
+Ruby:: 
++
+[source,ruby]
+
+----
+initials = "#{first_name[0].capitalize}.#{last_name[0].capitalize}." <1>
+
+...
+
+puts "Your initials are: #{initials}" <2>
+----
+<1> Mellan__lagring__ av värdet.
+<2> _Användning_ av värdet.
+
+Python:: Python
+Javascript:: Javascript
+C#:: C#
+====
+
+=== Konkatenering
+
+icon:question-circle[] Är det här ett verktyg?
+
+=== Konfigurationslagring
+
+Konfigurationslagring används när man vill _använda_ ett värde längre fram i flödet, men man vill inte skriva ut värdet direkt, utan vill kunna använda en variabel med ett _beskrivande namn_ istället för att skriva värdet direkt.
+
+.Exempel: Priser med och utan moms
+[NOTE]
+====
+Ett program som ska visa priser med och utan moms. Istället för att skriva pris * 1.25 kan man skriva pris * moms, förutsatt att man i moms-variabeln lagrat värdet 1.25.
+====
+
+.Exempel: Kastbanor med gravitationskonstant
+[NOTE]
+====
+I ett program som ska räkna ut kastbanor kan man lagra gravitationskonstanten (9.807) i variabeln `gravitation` och använda den istället för värdet varje gång man behöver använda gravitationskonstanten.
+====
+
+.Exempel: Spara återkommande textfraser
+[NOTE]
+====
+I Bröderna Lejonhjärta-spelet ska alla vakter avsluta sina meningar med frasen _"All makt åt Tengil vår befriare!"_. Istället för att skriva frasen på alla ställen kan man lagra frasen i en variabel och använda variabeln vid varje tillfälle.
+====
+
+Konfigurationslagring gör koden tydligare att förstå för oss människor (datorn bryr sig inte), och gör det enklare att ändra - om man behöver ändra det man lagrat behöver man bara ändra på ett enda ställe.
+
+image::logo.png[Sinatra Logo]
+
+[tabs,sync-group-id=lang]
+====
+Ruby::
++
+[source,ruby]
+----
+vat = 1.25 <1>
+
+...
+
+puts "#{price} exkl moms (#{price * vat} inkl. moms)" <2>
+----
+<1> Konfigurations__lagring__ av momssatsen (vat står för Value Added Tax, (moms på engelska)),
+<2> _Användning_ av momssatsen.
+Python::
++
+[source,python]
+----
+gravitation = 9.807
+----
+Javascript::
++
+[source,javascript]
+----
+const gravitation = 9.807;
+----
+C#::
++ 
+[source,c#]
+----
+var gravitation = 9.807;
+----
++
+[NOTE]
+**Type inference** räknar ut vilken datatyp som lagras i variabeln. Även om det inte står att variabeln innehåller en specifik datatyp kommer variabeln fortfarande vara "låst" till den datatyp som initialt lagrades i variabeln (i det här fallet en `int`).
+====
+
+== Uppdelning av flöde (selektion)
+
+=== If
+
+Om du vill att ditt program ska göra en sak _enbart_ om ett villkor är sant, kan du använda if. 
+
+If-verktyget använder ett _villkor_ (ett påstående som kan vara sant eller falskt), och om villkoret utvärderas till sant kommer något ske. 
+Om villkoret inte utvärderas till sant kommer programflödet fortsätta efter villkoret, som om ingenting hänt.
+
+.Exempel: Pris med eller utan moms.
+[NOTE]
+====
+På en hemsida som framförallt säljer till företag visas priserna utan moms. Men om någon klickat i att de vill se priserna med moms, ska priserna modifieras med momsen
+====
+
+image::if-1.png[If-verktyget]
+
+
+[tabs,sync-group-id=lang]
+====
+Ruby::
++
+[source,ruby]
+----
+if show_price_with_vat?
+    price = price * vat
+end
+----
+Python::
++
+[source,python]
+----
+if show_price_with_vat:
+    price = price * vat
+end
+----
+Javascript::
++
+[source,javascript]
+----
+null
+----
+C#::
++ 
+[source,c#]
+----
+Null
+----
++
+====
+
+.Exempel: Ett till exempel
+[NOTE]
+====
+Exempeltext
+====
+
+=== If-else
+
+
+=== If-elsif 
+
+=== If-elsif-else
+
+
+=== Lorem 
+
+[tabs,sync-group-id=lang]
+====
+Ruby:: Ruby
+Python:: Python
+Javascript:: Javascript
+C#:: C#
+====
+
+=== Ipsum
+
+[tabs,sync-group-id=lang]
+====
+Ruby:: Ruby
+Python:: Python
+Javascript:: Javascript
+C#:: C#
+====
+
+
+== Upprepning av flöde (iteration)
+
+
+=== Räknande Loop
+
+En räknande loop används när ...
+
+==== Inkrementerande Loop
+
+En inkrementerande loop används när ...
+
+[tabs,sync-group-id=lang]
+====
+Ruby:: Ruby
+Python:: Python
+Javascript:: Javascript
+C#:: C#
+====
+
+==== Dekrementerande Loop
+
+En inkrementerande loop används när ...
+
+[tabs,sync-group-id=lang]
+====
+Ruby:: Ruby
+Python:: Python
+Javascript:: Javascript
+C#:: C#
+====
+
+=== Loop Med Brytvärde
+
+icon:exclamation-circle[] Behöver utvecklas (alla loopar är väl egentligen loopar med brytvärde, men själva _intentionen_ är väl det som skiljer).
+
+== Avbrott av flöde
+
+icon:question-circle[]  Är detta en grupp av verktyg?
+
+=== Tidigt avbrott
+
+icon:question-circle[]  Är detta ett verktyg? (och ska den i så fall ligga här eller under upprepning av flöde?)
+
+== Sammansatta verktyg
+
+=== Iterativt uppbyggd output
+
+Iterativt uppbyggd output används när man har en _mängd_ data (ofta en lista) att behandla, och output är beroende av datan.
+
+I iterativt uppbyggd output <<_initialisering,_initialiserar_>> man först output-variabeln med ett lämpligt värde som vi sedan kan _modifiera_.
+
+Sedan <<_upprepning_av_flöde,_itererar_>> man över datan man behöver behandla och modifierar i iterationen output-variabeln (t.ex genom att addera värden till den)
+
+Slutligen, när iterationen är klar kommer output-variabeln innehålla rätt värde, och man kan returnera den.
+
+.Exempel: Skapa en lista av alla ord som börjar med en given bokstav i en text
+[NOTE]
+====
+Först <<_initialisering,_initialiserar_>> vi output-variabeln med lämpligt värde, i det här fallet antagligen en tom lista (som kan innehålla alla ord vi hittar).
+
+Sen _itererar_ vi (med <<_upprepning_av_flöde, lämpligt verktyg för uppreping av flödet>>) över orden och i varje varv i iterationen använder vi <<_if,__if__-verktyget>> för att _modifiera_ output-variabel-listan om om ordet börjar med den givna bokstaven.
+
+Slutligen, när iterationen är klar kommer output-variabel-listan innehålla alla ord som efterfrågades, och vi är klara
+====
+
+Lämpliga värden att _initialisera_ output-variabeln med är ofta:
+
+- 0 (om output ska vara ett tal)
+- en tom sträng (om output ska vara en sträng)
+- en tom lista (om output ska vara en lista)
+
+Men det finns undantag, t.ex kan man ibland _initialisera_ output-variabeln till ett av värdena som finns i mängden man ska behandla.
+
+=== Switch Loop
+
+icon:question-circle[] Är detta ett verktyg?
+
+
+image::switch_loop.png[Switch Loop?]

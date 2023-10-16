@@ -1,0 +1,32 @@
+:imagesdir: chapters/flow_and_state/images
+
+
+= Flöde och State
+
+Att programmera är att ge instruktioner till en dator, eller snarare datorns processor. 
+
+En processor kan bara göra en sak åt gången, och instruktionerna utförs därför en efter en, i ett _flöde_.
+
+Under _flödets_ gång kommer variabler att skapas och dess värden uppdateras.
+
+_State_ är värdet på alla variabler i ett program, _vid ett givet tillfälle_.  
+
+Programmets _state_ ändras alltså allteftersom programmet körs. 
+
+Att programmera handlar därför om att skapa ett _flöde_ som bearbetar _state_ och ser till att programmet har rätt _state_ när det är klart.
+
+Man kan alltså se _flödet_ som en _serie av transformationer_ av _state_.
+
+För att konstruera programmets _flöde_ och för att transformera _state_ finns ett _begränsat_ antal verktyg som används av alla programmerare oavsett vilka program de skriver eller språk de använder.
+
+Genom att kombinera dessa verktyg på olika sätt, kan man skapa _alla_ program.
+
+Verktygen är oberoende av kod, men kan så klart implementeras i kod i valfritt programmeringsspråk.
+
+Den här boken går igenom de verktyg man behöver för att klara Programmering 1 (och antagligen bra mycket mer än så).
+
+== Flödesschema
+
+För att illutstrera verktygen används flödesscheman. 
+
+Flödesscheman fungerar såhär ...
