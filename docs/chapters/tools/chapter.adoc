@@ -405,7 +405,6 @@ På en hemsida som framförallt säljer till företag visas priserna utan moms. 
 
 image::if-1.png[If-verktyget]
 
-
 [tabs,sync-group-id=lang]
 ====
 Ruby::
