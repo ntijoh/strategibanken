@@ -29,5 +29,5 @@ jobs:
         # adoc_file_ext: .ascii # default is .adoc
         source_dir: docs/ # default is .
         # slides_build: true
-        pre_build: bundle install
+        pre_build: gem install asciidoctor-tabs
         # post_build:
