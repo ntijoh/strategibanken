@@ -7,7 +7,7 @@ Att programmera är att ge instruktioner till en dator, eller snarare datorns pr
 
 En processor kan bara göra en sak åt gången, och instruktionerna utförs därför en efter en, i ett _flöde_.
 
-Under _flödets_ gång kommer variabler att skapas och dess värden uppdateras.
+Under _flödets_ gång kommer variabler att skapas och deras värden uppdateras.
 
 _State_ är värdet på alla variabler i ett program, _vid ett givet tillfälle_.  
 
@@ -27,6 +27,6 @@ Den här boken går igenom de verktyg man behöver för att klara Programmering 
 
 == Flödesschema
 
-För att illutstrera verktygen används flödesscheman. 
+För att illustrera verktygen används flödesscheman. 
 
 Flödesscheman fungerar såhär ...

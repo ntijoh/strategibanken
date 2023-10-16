@@ -25,7 +25,7 @@ jobs:
       uses: ntijoh-te4/asciidoctor-ghpages-action@1af5baccd44ff01c9cb42030b0ee6d5aab4d5d8b
       with:
         #pdf_build: true
-        asciidoctor_params: -r asciidoctor-kroki
+        asciidoctor_params: -r asciidoctor-kroki -r asciidoctor-tabs
         # adoc_file_ext: .ascii # default is .adoc
         source_dir: docs/ # default is .
         # slides_build: true
