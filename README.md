@@ -1,4 +1,4 @@
-# Verktygsboken
+# Strategibanken
 
 ## 1. Installation
 
@@ -17,11 +17,11 @@ Annars : [RubyInstaller for Windows](https://rubyinstaller.org/)
 
 ### 1.2 Asciidoctor
 
-I verktygsbokens rotmapp: `bundle install`
+I strategibankens rotmapp: `bundle install`
 
 ## 2. Bygga boken lokalt
 
-I verktygsbokens rotmapp: `asciidoctor -r asciidoctor-kroki -r asciidoctor-tabs docs/index.adoc`
+I strategibankens rotmapp: `asciidoctor -r asciidoctor-kroki -r asciidoctor-tabs docs/index.adoc`
 
 Den färdigbyggda boken finns i `docs/index.html`
 

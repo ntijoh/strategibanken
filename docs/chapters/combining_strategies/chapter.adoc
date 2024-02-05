@@ -1,6 +1,6 @@
 :imagesdir: chapters/test/images
 
-= Kombinering av verktyg
+= Kombinering av strategier
 
 == Sammanfogning
 
