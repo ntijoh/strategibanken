@@ -12,7 +12,7 @@
 :book:
 
 include::chapters/flow_and_state/chapter.adoc[leveloffset=+1]
-include::chapters/goals_and_tools/chapter.adoc[leveloffset=+1]
-include::chapters/tools/chapter.adoc[leveloffset=+1]
-include::chapters/combining_tools/chapter.adoc[leveloffset=+1]
-include::chapters/tool_centered_assignments/chapter.adoc[leveloffset=+1]
+include::chapters/goals_and_strategies/chapter.adoc[leveloffset=+1]
+include::chapters/strategies/chapter.adoc[leveloffset=+1]
+include::chapters/combining_strategies/chapter.adoc[leveloffset=+1]
+include::chapters/strategy_centered_assignments/chapter.adoc[leveloffset=+1]
