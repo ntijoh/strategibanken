@@ -1,8 +1,18 @@
 :imagesdir: chapters/test/images
 
 
-= Verktygsbaserade Uppgifter
+= Strategibaserade Uppgifter
 
-Wut
+== Strategi 1
+
+=== Uppgift 1
+
+=== Uppgift 2
+
+== Strategi 2
+
+=== Uppgift 1
+
+=== Uppgift 2
 
 image::logo.png[Sinatra Logo]

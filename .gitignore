@@ -1,3 +1,4 @@
 .ruby-version
+.vscode/*
 **/.DS_STORE
 docs/index.html
