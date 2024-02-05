@@ -1,4 +1,4 @@
-:imagesdir: chapters/test/images
+:imagesdir: chapters/goals_and_strategies/images
 
 
 = Mål och Strategier

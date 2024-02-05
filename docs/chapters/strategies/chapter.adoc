@@ -1,4 +1,4 @@
-:imagesdir: chapters/tools/images
+:imagesdir: chapters/strategies/images
 :tabs-sync-option:
 
 = Strategier

@@ -1,4 +1,4 @@
-:imagesdir: chapters/test/images
+:imagesdir: chapters/strategy_centered_assignments/images
 
 
 = Strategibaserade Uppgifter

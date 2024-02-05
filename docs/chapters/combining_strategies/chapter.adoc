@@ -1,4 +1,4 @@
-:imagesdir: chapters/test/images
+:imagesdir: chapters/combining_strategies/images
 
 = Kombinering av strategier
 
