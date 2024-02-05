@@ -1,5 +1,5 @@
 :toc: left
-:toc-title: Verktygsboken
+:toc-title: Strategibanken
 :toclevels: 4 
 :icons: font
 :source-highlighter: coderay
