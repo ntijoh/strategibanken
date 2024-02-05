@@ -7,7 +7,7 @@
 
 === Tilldelning
 
-icon:question-circle[] Är tilldelning ett verktyg eller räknas det som programming "knowledge"?
+icon:question-circle[] Är tilldelning en strategi eller räknas det som programming "knowledge"?
 
 För att kunna använda _värden_ (t.ex tal) i program måste man först lagra dem i en variabel. 
 Att lagra ett värde i en variabel gör man med hjälp av tilldelning.
@@ -18,7 +18,7 @@ En tilldelning består av tre komponenter: en _variabel_, ett _tilldelningstecke
 ====
 Ruby::
 +
-.Tilldelningsverktyget i Ruby
+.Tilldelningsstrategin i Ruby
 [source,ruby]
 ----
 speed = 10
@@ -59,7 +59,7 @@ När man vill räkna ut summan alla värden i en lista behöver man ha en variab
 I ett bilspel vill man kunna gasa och bromsa. Både gas- och bromskoden kommer _modifiera_ hastigheten på bilen, men för att hastigheten ska kunna modifieras måste det först skapas en variabel som innehåller hastigheten, och variabeln måste ha _initialiserats_ med ett värde som kan modifieras.
 ====
 
-image::initialisering.png[Initialiseringsverktyget]
+image::initialisering.png[Initialiseringsstrategin]
 
 [tabs,sync-group-id=lang]
 ====
@@ -103,7 +103,7 @@ var speed = 10;
 
 === Inkrementering
 
-Inkrementering innebär att _öka_ värdet på en variabel. Oftast är värdet ett heltal. Inkrementering används ofta inne i <<_upprepning_av_flöde,loop-verktygen>> för att hålla koll på räknar-variabeln, men det går även att använda tillsammans med de olika <<_uppdelning_av_flöde,if-verktygen>>.
+Inkrementering innebär att _öka_ värdet på en variabel. Oftast är värdet ett heltal. Inkrementering används ofta inne i <<_upprepning_av_flöde,loop-strategierna>> för att hålla koll på räknar-variabeln, men det går även att använda tillsammans med de olika <<_uppdelning_av_flöde,if-strategierna>>.
 
 För att _inkrementera_ värdet på en variabel måste variabeln först vara <<_initialisering,_initialiserad_>>
 
@@ -195,7 +195,7 @@ var speed = 10;
 
 === Dekrementering
 
-Dekrementering innebär att _minska_ värdet på en variabel. Oftast är värdet ett heltal. Dekrementering används ofta inne i loopar för att hålla koll på räknar-variabeln, men det går även att använda tillsammans med if-verktygen.
+Dekrementering innebär att _minska_ värdet på en variabel. Oftast är värdet ett heltal. Dekrementering används ofta inne i loopar för att hålla koll på räknar-variabeln, men det går även att använda tillsammans med if-strategierna.
 
 För att _dekrementera_ värdet på en variabel måste variabeln först vara <<_initialisering,_initialiserad_>>
 
@@ -323,7 +323,7 @@ C#:: C#
 
 === Konkatenering
 
-icon:question-circle[] Är det här ett verktyg?
+icon:question-circle[] Är det här en strategi?
 
 === Konfigurationslagring
 
@@ -394,7 +394,7 @@ var gravitation = 9.807;
 
 Om du vill att ditt program ska göra en sak _enbart_ om ett villkor är sant, kan du använda if. 
 
-If-verktyget använder ett _villkor_ (ett påstående som kan vara sant eller falskt), och om villkoret utvärderas till sant kommer något ske. 
+If-strategin använder ett _villkor_ (ett påstående som kan vara sant eller falskt), och om villkoret utvärderas till sant kommer något ske. 
 Om villkoret inte utvärderas till sant kommer programflödet fortsätta efter villkoret, som om ingenting hänt.
 
 .Exempel: Pris med eller utan moms.
@@ -403,7 +403,7 @@ Om villkoret inte utvärderas till sant kommer programflödet fortsätta efter v
 På en hemsida som framförallt säljer till företag visas priserna utan moms. Men om någon klickat i att de vill se priserna med moms, ska priserna modifieras med momsen
 ====
 
-image::if-1.png[If-verktyget]
+image::if-1.png[If-strategin]
 
 [tabs,sync-group-id=lang]
 ====
@@ -510,13 +510,13 @@ icon:exclamation-circle[] Behöver utvecklas (alla loopar är väl egentligen lo
 
 == Avbrott av flöde
 
-icon:question-circle[]  Är detta en grupp av verktyg?
+icon:question-circle[]  Är detta en grupp av strategier?
 
 === Tidigt avbrott
 
-icon:question-circle[]  Är detta ett verktyg? (och ska den i så fall ligga här eller under upprepning av flöde?)
+icon:question-circle[]  Är detta en strategi? (och ska den i så fall ligga här eller under upprepning av flöde?)
 
-== Sammansatta verktyg
+== Sammansatta strategier
 
 === Iterativt uppbyggd output
 
@@ -533,7 +533,7 @@ Slutligen, när iterationen är klar kommer output-variabeln innehålla rätt v�
 ====
 Först <<_initialisering,_initialiserar_>> vi output-variabeln med lämpligt värde, i det här fallet antagligen en tom lista (som kan innehålla alla ord vi hittar).
 
-Sen _itererar_ vi (med <<_upprepning_av_flöde, lämpligt verktyg för uppreping av flödet>>) över orden och i varje varv i iterationen använder vi <<_if,__if__-verktyget>> för att _modifiera_ output-variabel-listan om om ordet börjar med den givna bokstaven.
+Sen _itererar_ vi (med <<_upprepning_av_flöde, lämplig strategi för uppreping av flödet>>) över orden och i varje varv i iterationen använder vi <<_if,__if__-strategin>> för att _modifiera_ output-variabel-listan om om ordet börjar med den givna bokstaven.
 
 Slutligen, när iterationen är klar kommer output-variabel-listan innehålla alla ord som efterfrågades, och vi är klara
 ====
@@ -548,7 +548,7 @@ Men det finns undantag, t.ex kan man ibland _initialisera_ output-variabeln till
 
 === Switch Loop
 
-icon:question-circle[] Är detta ett verktyg?
+icon:question-circle[] Är detta en strategi?
 
 
 image::switch_loop.png[Switch Loop?]

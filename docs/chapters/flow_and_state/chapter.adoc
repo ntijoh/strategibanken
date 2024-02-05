@@ -17,16 +17,16 @@ Att programmera handlar därför om att skapa ett _flöde_ som bearbetar _state_
 
 Man kan alltså se _flödet_ som en _serie av transformationer_ av _state_.
 
-För att konstruera programmets _flöde_ och för att transformera _state_ finns ett _begränsat_ antal verktyg som används av alla programmerare oavsett vilka program de skriver eller språk de använder.
+För att konstruera programmets _flöde_ och för att transformera _state_ finns ett _begränsat_ antal strategier som används av alla programmerare oavsett vilka program de skriver eller språk de använder.
 
-Genom att kombinera dessa verktyg på olika sätt, kan man skapa _alla_ program.
+Genom att kombinera dessa strategier på olika sätt, kan man skapa _alla_ program.
 
-Verktygen är oberoende av kod, men kan så klart implementeras i kod i valfritt programmeringsspråk.
+Strategierna är oberoende av kod, men kan så klart implementeras i kod i valfritt programmeringsspråk.
 
-Den här boken går igenom de verktyg man behöver för att klara Programmering 1 (och antagligen bra mycket mer än så).
+Den här boken går igenom de strategier man behöver för att klara Programmering 1 (och antagligen bra mycket mer än så).
 
 == Flödesschema
 
-För att illustrera verktygen används flödesscheman. 
+För att illustrera strategier används flödesscheman. 
 
 Flödesscheman fungerar såhär ...
