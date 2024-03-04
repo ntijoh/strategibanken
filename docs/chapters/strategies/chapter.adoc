@@ -388,6 +388,70 @@ var gravitation = 9.807;
 **Type inference** räknar ut vilken datatyp som lagras i variabeln. Även om det inte står att variabeln innehåller en specifik datatyp kommer variabeln fortfarande vara "låst" till den datatyp som initialt lagrades i variabeln (i det här fallet en `int`).
 ====
 
+=== Swap
+
+Swap används när du behöver byta plats på två värden i ett program.
+
+.Exempel: Byta plats på värden i en array
+[NOTE]
+====
+Som en del av en `in-place`-sorteringsalgoritm behöver värden i en lista byta plats, t.ex vill man byta plats på `9` och `5` i följande lista: `[9,7,5]`
+====
+
+.Exempel: Byta plats på tecken i en sträng.
+[NOTE]
+====
+Om man vill skapa anagram kan man byta plats på tecken i sen sträng, t.ex kan man ändra `"takt"` till `"katt"` genom att byta plats på `t` (det första) och `k`.
+====
+
+.Exempel: Byta plats på namn.
+[NOTE]
+====
+I vissa delar av världen presenterar man sig med förnamn, och sen efternamn, i andra delar av världen med efternamn, och sen förnamn. Om man har två variabler för namn, kan man därför vilja byta plats på vad som lagras i variablerna.
+====
+
+För att genomföra swap-strategin behöver du först ha referenser till de två värden du vill byta plats på. Referenserna kan vara  variabler som innehåller själva värdena eller ett index i en lista (där värdet finns).
+
+Svårigheten uppstår när man försöker byta plats. Tänk följande pseudokod
+
+.Problemet med att byta plats
+[WARNING]
+====
+[source, pseudocode]
+----
+a = 1 
+b = 2
+a = b <1>
+b = a <2>
+----
+<1> Värdet på `a` skrivs över med värdet på `b`. (`a` är 1 och `b` är 1). Det tidigare värdet på `a` är förlorat.
+<2> Värdet på `b` skrivs över med det nya värdet på `a` (som är samma som `b`).
+====
+
+Man kan göra en jämförelse till copy/paste på en dator. Om du kopierar något, och sen klistrar in det på ett annat ställe, skriver du över det som fanns på det andra stället tidigare.
+
+För att kunna spara värdet på `a` behöver vi använda <<#_mellanlagring,mellanlagring>> för att temporärt lagra värdet på `a`, __innan__ vi skriver över `a` med värdet på `b`.
+
+.Swap med mellanlagring
+[NOTE]
+====
+[source, pseudocode]
+----
+a = 1 
+b = 2
+tmp = a <1>
+a = b <2>
+b = tmp <3>
+----
+<1> Värdet på `a` mellanlagras i `tmp`.
+<1> Värdet på `a` skrivs över med värdet på `b`. Det tidigare värdet på `a` finns kvar i `tmp`.
+<2> Värdet på `b` skrivs över med värdet på `tmp`.
+====
+
+.Swap som flödesschema
+image::swap.png[Swap-strategin]
+
+
 == Uppdelning av flöde (selektion)
 
 === If
